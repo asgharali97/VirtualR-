@@ -1,21 +1,17 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.png";
+import { navItems } from "../constants";
+import {Menu,X} from 'lucide-react'
 
 const Navbar = () => {
   const [ muneOpen, setMuneOpen ] = useState(false);
-  const navItems = [
-    { label: "Features", href: "#" },
-    { label: "Workflow", href: "#" },
-    { label: "Pricing", href: "#" },
-    { label: "Testimonials", href: "#" },
-  ];
   const toggleMune = () => {
     setMuneOpen(!muneOpen);
   };
   return (
     <>
       <div className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/80">
-        <div className="container py-4 mx-auto relative text-sm">
+        <div className="container px-4 mx-auto relative text-sm">
           <div className="flex justify-between items-center">
             <div className="flex items-center flex-shrink-0">
               <img className="w-10 h-10 mr-2" src={logo} alt="" />
@@ -41,7 +37,7 @@ const Navbar = () => {
             </div>
             <div className="lg:hidden md:flex flex-col justify-end">
               <button className="cursor-pointer" onClick={toggleMune}>
-                {muneOpen ? "X" : "mune"}
+                {muneOpen ? <X/> : <Menu/>}
               </button>
             </div>
           </div>
