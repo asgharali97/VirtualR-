@@ -1,8 +1,11 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import HeroSection from './components/HeroSection'
-import FeatureSection from './components/FeatureSection'
-import WorkFlow from './components/WorkFlow'
+import React from 'react';
+import Navbar from './components/Navbar';
+import HeroSection from './components/HeroSection';
+import FeatureSection from './components/FeatureSection';
+import WorkFlow from './components/WorkFlow';
+import Pricing from './components/Pricing';
+import Testomnails from './components/Testomnails';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -12,6 +15,9 @@ const App = () => {
     <HeroSection/>
     <FeatureSection/>
     <WorkFlow/>
+    <Pricing/>
+    <Testomnails/>
+    <Footer/>
 
     
    
